@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Tickets</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"
+    />
+    <link rel="stylesheet" href="code.css" />
+  </head>
+  <body>
+    <div class="heading ui inverted segment">
+      <h2 class="ui header">
+        <i class="film icon"></i>
+        <div class="content">
+          MOVIES
+          <div class="sub header" id="subtitle">Get Your Movie Tickets</div>
+        </div>
+      </h2>
+    </div>
+
+    <div class="content-grid">
+      <div class="sidebar">
+        <h3 class="ui dividing header" id="bar">Movies Available</h3>
+        <ul class="ui divided relaxed list" id="films">
+          <li class="film item">Movie titles will go here.</li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="poster">
+          <img
+            id="poster"
+            src="assets/placeholderImage.png"
+            alt="[MOVIE TITLE]"
+            class="ui centered rounded image"
+          />
+        </div>
+
+        <div class="details">
+          <div class="ui card">
+            <div class="content">
+              <div id="title" class="header">[Movie Title]</div>
+              <div id="runtime" class="meta">[Runtime] minutes</div>
+              <div class="description">
+                <p id="film-info">[Insert movie description here]</p>
+                <span id="showtime" class="ui label">[Showtime]</span>
+                <span id="ticket-num" class="ui label">[X]</span> remaining tickets
+              </div>
+            </div>
+            <div class="extra content">
+              <button id="buy-ticket"> 🎟️ purchase tickets</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="code.js"></script>
+  </body>
+</html>
